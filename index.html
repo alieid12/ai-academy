@@ -1,1 +1,40 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#0a1020"/><title>AI Academy</title></head><body><div id="app"></div><script type="module" src="/src/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#0a1020"/>
+<meta name="description" content="AI Academy: accessible adult education, from literacy and numeracy to programming and artificial intelligence."/>
+<title>AI Academy — Learn without limits</title>
+<style>
+html,body{margin:0;min-height:100%;background:#080f1d;color:#eaf1fc;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#boot{max-width:760px;margin:12vh auto;padding:30px}
+#boot h1{font-size:clamp(2rem,6vw,4rem);letter-spacing:-.05em}
+#boot p{color:#b2c4dc;line-height:1.7}
+#boot a{color:#9dbdff}
+#boot .tag{font-size:.8rem;color:#94b9ff;letter-spacing:.13em;font-weight:800}
+</style>
+<script>
+window.addEventListener('error',function(event){
+ const el=document.getElementById('boot');
+ if(el){el.innerHTML='<div class="tag">AI ACADEMY</div><h1>We could not start the learning app.</h1><p>The page loaded, but a script failed. Please refresh. If this continues, check the latest GitHub Pages deployment.</p><p><a href="https://github.com/alieid12/ai-academy/actions">View deployment status</a></p>';}
+});
+window.addEventListener('unhandledrejection',function(){
+ const el=document.getElementById('boot');
+ if(el){el.innerHTML='<div class="tag">AI ACADEMY</div><h1>Something went wrong.</h1><p>Please refresh or check the deployment status.</p>';}
+});
+</script>
+</head>
+<body>
+<div id="app">
+ <main id="boot" role="status">
+  <div class="tag">AI ACADEMY · LEARN WITHOUT LIMITS</div>
+  <h1>Every expert started somewhere.</h1>
+  <p>Loading your learning space. Build your skills from reading and mathematics to programming and artificial intelligence.</p>
+  <p>If this message does not disappear, <a href="https://github.com/alieid12/ai-academy/actions">check the deployment</a>.</p>
+ </main>
+</div>
+<noscript><p>AI Academy requires JavaScript. Enable JavaScript in your browser to use the interactive lessons.</p></noscript>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
