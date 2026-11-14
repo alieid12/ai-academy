@@ -35,6 +35,16 @@ window.addEventListener('unhandledrejection',function(){
  </main>
 </div>
 <noscript><p>AI Academy requires JavaScript. Enable JavaScript in your browser to use the interactive lessons.</p></noscript>
+<script>
+// If the application bundle cannot load, show a useful diagnosis instead of hanging.
+window.__academyStarted = false;
+window.setTimeout(function () {
+  if (window.__academyStarted) return;
+  const el = document.getElementById('boot');
+  if (!el) return;
+  el.innerHTML = '<div class="tag">AI ACADEMY</div><h1>Unable to open the academy</h1><p>The application did not start. This may be caused by an unavailable JavaScript bundle, browser cache, or a deployment configuration mismatch.</p><p><a href="https://github.com/alieid12/ai-academy/actions">Check deployment</a> · <a href="https://alieid12.github.io/ai-academy/?refresh=1">Try reloading</a></p>';
+}, 9000);
+</script>
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>
