@@ -1,3 +1,4 @@
+import {deepLessons} from './deep-lessons.js';
 export const phases = [
  {name:"Foundations",levels:[
  ["English literacy","Phonics and sounds","Reading words","Reading instructions","Sentence writing","Technical vocabulary","Comprehension","Communication"],
@@ -165,4 +166,18 @@ for (const phase of phases) for (const level of phase.levels) {
   }
 }
 
+for (const [id, [intro, question, choices, answer, task]] of Object.entries(deepLessons)) {
+  if (!lessons[id]) continue;
+  const prior = lessons[id];
+  lessons[id] = {
+    ...prior, intro,
+    steps: [
+      'Learning objective: understand and apply ' + prior.title + '.',
+      intro,
+      'Try the worked example again with different numbers, inputs, or conditions.',
+      'Explain the result and identify one assumption or limitation.'
+    ],
+    question, choices, answer, task, scope:'worked-example'
+  };
+}
 export const inventory=()=>({phases:phases.length,levels:phases.reduce((n,p)=>n+p.levels.length,0),modules:phases.reduce((n,p)=>n+p.levels.reduce((s,l)=>s+l.length-1,0),0),authored:Object.keys(lessons).length});
