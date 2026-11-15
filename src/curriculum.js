@@ -1,3 +1,4 @@
+import {universityExtensions} from './university-extensions.js';
 import {deepLessons} from './deep-lessons.js';
 export const phases = [
  {name:"Foundations",levels:[
@@ -179,5 +180,9 @@ for (const [id, [intro, question, choices, answer, task]] of Object.entries(deep
     ],
     question, choices, answer, task, scope:'worked-example'
   };
+}
+for (const [id, extension] of Object.entries(universityExtensions)) {
+ if (!lessons[id]) continue;
+ lessons[id] = {...lessons[id],...extension,scope:'guided-lab'};
 }
 export const inventory=()=>({phases:phases.length,levels:phases.reduce((n,p)=>n+p.levels.length,0),modules:phases.reduce((n,p)=>n+p.levels.reduce((s,l)=>s+l.length-1,0),0),authored:Object.keys(lessons).length});
