@@ -33,3 +33,15 @@ body{background:radial-gradient(circle at 75% -10%,#142b4c 0,transparent 38%),#0
 .university-item small{display:block;color:#a7bad6;margin-bottom:10px}
 .university-item a{color:#a6c8ff;font-weight:700;text-underline-offset:4px}
 .university-wrap .university-panel{margin:18px 0 0}
+
+/* Project-based learning blueprint */
+.guide-panel{border:1px solid #365475;border-radius:16px;padding:clamp(18px,2.5vw,28px);margin-top:22px;background:linear-gradient(145deg,#182e47,#101d30)}
+.guide-panel h3{font-size:1.2rem;line-height:1.45;max-width:64ch;margin:10px 0 16px;color:#eef5ff}
+.guide-panel h4{font-size:.92rem;letter-spacing:.01em;color:#c6dcff;margin:22px 0 8px}
+.guide-panel ul{padding-left:1.35rem;margin:8px 0;display:grid;gap:8px}
+.guide-panel li{color:#b8cce2;line-height:1.55}
+.guide-panel p{margin:6px 0;line-height:1.65}
+.guide-meta{display:flex;flex-wrap:wrap;gap:9px}
+.guide-meta span{display:inline-block;border:1px solid #3b5d85;border-radius:100px;padding:7px 12px;font-size:.78rem;color:#bdd5f5;background:#1c3857}
+.mastery-check{background:#203b58;border-left:3px solid #85b1ff;padding:13px 15px;border-radius:5px}
+@media(max-width:620px){.guide-panel{padding:18px}.guide-meta{display:grid}.guide-meta span{border-radius:10px}}
