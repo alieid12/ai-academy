@@ -23,3 +23,13 @@ body{background:radial-gradient(circle at 75% -10%,#142b4c 0,transparent 38%),#0
 @media(max-width:950px){.sidebar{position:relative;height:auto}.quiz{position:static}}
 @media(max-width:620px){.hero:after{display:none}.module-grid{grid-template-columns:1fr}.module.ready{min-height:70px}.brand{letter-spacing:-.025em}.nav{flex:1;text-align:center}.lesson-content,.quiz{padding:20px}.top{padding:0 16px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.university-panel{background:linear-gradient(140deg,#172d4c,#101c30);border:1px solid #38577d;border-radius:18px;padding:22px;margin:20px 0 26px}
+.university-panel h3{margin:0 0 6px}
+.university-panel>p{margin:0 0 14px;font-size:.87rem}
+.university-item{padding:14px 0;border-top:1px solid #304762}
+.university-item strong{display:block;color:#e7f0ff}
+.university-item p{font-size:.85rem;margin:6px 0}
+.university-item small{display:block;color:#a7bad6;margin-bottom:10px}
+.university-item a{color:#a6c8ff;font-weight:700;text-underline-offset:4px}
+.university-wrap .university-panel{margin:18px 0 0}
