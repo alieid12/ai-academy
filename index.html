@@ -16,12 +16,13 @@ html,body{margin:0;min-height:100%;background:#080f1d;color:#eaf1fc;font-family:
 </style>
 <script>
 window.addEventListener('error',function(event){
+ const detail = event && (event.message || (event.target && event.target.src)) || 'Unknown script error';
  const el=document.getElementById('boot');
- if(el){el.innerHTML='<div class="tag">AI ACADEMY</div><h1>We could not start the learning app.</h1><p>The page loaded, but a script failed. Please refresh. If this continues, check the latest GitHub Pages deployment.</p><p><a href="https://github.com/alieid12/ai-academy/actions">View deployment status</a></p>';}
+ if(el){el.innerHTML='<div class="tag">AI ACADEMY</div><h1>We could not start the learning app.</h1><p>The page loaded, but a script failed. Error: '+String(detail).replace(/[<>&]/g,'')+'. Please refresh. If this continues, check the latest GitHub Pages deployment.</p><p><a href="https://github.com/alieid12/ai-academy/actions">View deployment status</a></p>';}
 });
-window.addEventListener('unhandledrejection',function(){
+window.addEventListener('unhandledrejection',function(event){
  const el=document.getElementById('boot');
- if(el){el.innerHTML='<div class="tag">AI ACADEMY</div><h1>Something went wrong.</h1><p>Please refresh or check the deployment status.</p>';}
+ if(el){el.innerHTML='<div class="tag">AI ACADEMY</div><h1>Something went wrong.</h1><p>'+String(event.reason && (event.reason.message || event.reason) || 'Unknown error').replace(/[<>&]/g,'')+'. Please refresh or check the deployment status.</p>';}
 });
 </script>
 </head>
@@ -42,7 +43,7 @@ window.setTimeout(function () {
   if (window.__academyStarted) return;
   const el = document.getElementById('boot');
   if (!el) return;
-  el.innerHTML = '<div class="tag">AI ACADEMY</div><h1>Unable to open the academy</h1><p>The application did not start. This may be caused by an unavailable JavaScript bundle, browser cache, or a deployment configuration mismatch.</p><p><a href="https://github.com/alieid12/ai-academy/actions">Check deployment</a> · <a href="https://alieid12.github.io/ai-academy/?refresh=1">Try reloading</a></p>';
+  el.innerHTML = '<div class="tag">AI ACADEMY</div><h1>Unable to open the academy</h1><p>The application did not start. The deployment may be successful even when a browser cannot load or execute the application bundle. Please send a screenshot of this error to the developer.</p><p><a href="https://github.com/alieid12/ai-academy/actions">Check deployment</a> · <a href="https://alieid12.github.io/ai-academy/?refresh=1">Try reloading</a></p>';
 }, 9000);
 </script>
 <script type="module" src="/src/main.js"></script>
