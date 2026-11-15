@@ -1,4 +1,4 @@
-import {phases,lessons,inventory} from './curriculum.js';import './style.css';
+import {phases,lessons,inventory} from './curriculum.js';
 window.__academyStarted = true;
 const root=document.getElementById('app');const key='ai-academy-progress-v1';let state={page:'dashboard',selected:null,query:'',answers:{},notes:{},completed:[],font:1};try{const saved=JSON.parse(localStorage.getItem(key)||'{}');state={...state,...saved,page:'dashboard'}}catch{}
 const save=()=>localStorage.setItem(key,JSON.stringify({answers:state.answers,notes:state.notes,completed:state.completed,font:state.font}));
