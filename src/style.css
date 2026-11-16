@@ -411,3 +411,26 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .neuron-pipeline span:last-child{background:#d7e8ff}
 :root[data-theme="light"] .knn-line{background:#f3f8ff;border-color:#bad0ed}
 :root[data-theme="light"] .knn-line::before{border-color:#6190cc}
+
+
+/* Honest, accessible local learning evidence dashboard */
+.record-panel{margin:24px 0 50px}
+.record-panel>h2{margin:26px 0 12px}
+.record-levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;margin:22px 0 30px}
+.record-level{padding:16px;border:1px solid #344d6e;background:#172940;border-radius:13px}
+.record-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:13px;font-size:.86rem}
+.record-label strong{color:#f0f5ff}
+.record-label span{color:#aac0db;font-variant-numeric:tabular-nums}
+.record-level progress{display:block;width:100%;height:9px;border:0;border-radius:10px;overflow:hidden;background:#273e5b}
+.record-level progress::-webkit-progress-bar{background:#273e5b}
+.record-level progress::-webkit-progress-value{background:#568ceb}
+.record-level progress::-moz-progress-bar{background:#568ceb}
+.record-completions{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:9px 26px;padding-left:21px}
+.record-completions li{color:#c9d9ea;line-height:1.65}
+@media(max-width:650px){.record-levels{grid-template-columns:1fr}.record-level{padding:14px}}
+:root[data-theme="light"] .record-level{background:#f6f9ff;border-color:#d2deee}
+:root[data-theme="light"] .record-label strong{color:#244366}
+:root[data-theme="light"] .record-label span{color:#4f6480}
+:root[data-theme="light"] .record-level progress{background:#dae6f5}
+:root[data-theme="light"] .record-level progress::-webkit-progress-bar{background:#dae6f5}
+:root[data-theme="light"] .record-completions li{color:#385475}
