@@ -303,3 +303,19 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .lab-graph{background:#eff6ff;color:#427ab9;border-color:#cadcf0}
 :root[data-theme="light"] .lab-actions button:last-child{background:#e6effc;color:#214d84;border-color:#abc5e8}
 @media(prefers-reduced-motion:reduce){.fraction-track>div{transition:none}}
+
+
+/* Compact level progression: completion is not a mastery certification */
+.level-meter{display:block;width:clamp(150px,20vw,260px);max-width:100%;height:9px;margin:0 0 14px;border:0;border-radius:20px;overflow:hidden;background:#273b54}
+.level-meter::-webkit-progress-bar{background:#273b54;border-radius:20px}
+.level-meter::-webkit-progress-value{background:linear-gradient(90deg,#558deb,#93beff);border-radius:20px}
+.level-meter::-moz-progress-bar{background:#558deb;border-radius:20px}
+.search-count{margin:12px 0;color:#c0cee1;font-size:.86rem}
+.search-empty{border:1px dashed #54779a;border-radius:14px;padding:24px}
+.level-details{margin-top:22px;border-color:#344c69}
+.level-details summary{display:list-item;padding:10px 2px;font-size:.92rem}
+:root[data-theme="light"] .level-meter{background:#d7e4f3}
+:root[data-theme="light"] .level-meter::-webkit-progress-bar{background:#d7e4f3}
+:root[data-theme="light"] .search-count{color:#4c6686}
+:root[data-theme="light"] .level-details{border-color:#d3e0ef}
+:root[data-theme="light"] .level-details summary{color:#28568f}
