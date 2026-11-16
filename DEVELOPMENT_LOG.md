@@ -86,3 +86,12 @@
 - Continued zero-cost static GitHub Pages architecture, no accounts or paid AI API required.
 - The most recent confirmed successful production build and Pages deployment prior to this documentation update was commit `8277ad7d`, including all ten neural studios. Verify the current head workflow for the systems expansion and documentation.
 - Next work: independent beginner diagnostic and mastery rubrics, additional 106 detailed studios, browser-based QA, text and screen-reader support for interactive lessons, and stronger project assessment.
+
+
+## Learner evidence and UI follow-up — November 16, 2026
+
+- Replaced the user-facing **Teacher dashboard** with an honest **Learning record**; no remote teacher access or account authentication is implied.
+- The record now reports locally completed lesson activities, attempted checkpoints, currently all-correct checkpoints, notes, due reviews and deep-dive availability; per-level progress bars and a completed-activity list support orientation.
+- Added responsive dark/light presentation and screen-reader-labelled progress elements for this record.
+- The 92-studio release prior to this change successfully passed GitHub Actions at commit `f81d2baf`. The current UI commit must be verified independently.
+- **Open issues:** some mapped lesson content remains introductory, checkpoints can be retried after seeing explanations, and no external competency assessment or graphical browser test has been completed.
