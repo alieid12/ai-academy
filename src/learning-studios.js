@@ -5,6 +5,7 @@ import {foundationExpansion} from './foundation-expansion.js';
 import {pythonExpansion} from './python-expansion.js';
 import {aiCoreExpansion} from './ai-core-expansion.js';
 import {neuralExpansion} from './neural-expansion.js';
+import {systemsExpansion} from './systems-expansion.js';
 // Original beginner-first learning studios: short, scaffolded investigations.
 // Each studio is self-contained and can be completed with pencil and paper.
 export const learningStudios={
@@ -15,6 +16,7 @@ export const learningStudios={
  ...pythonExpansion,
  ...aiCoreExpansion,
  ...neuralExpansion,
+ ...systemsExpansion,
  'Numeracy:Counting and place value':{
  objective:'Read two-digit numbers and explain the value of each digit.',
  vocabulary:[['digit','One symbol from 0 to 9.'],['tens','Groups of ten objects.'],['ones','Objects left after grouping tens.']],
