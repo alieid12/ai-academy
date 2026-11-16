@@ -62,3 +62,15 @@
 - **Automated QA:** added tests for checkpoints, full foundation/Python coverage, and fourteen project rubrics. GitHub Actions caught two actual content-quality failures (short checkpoint prompts, rubric evidence), then passed after corrections. The latest confirmed successful deploy workflow during this batch was commit `b0aacd64` (GitHub Actions); newer doc commits may trigger additional runs.
 - **Technical limitations:** no complete manual keyboard/screen-reader/device/browser walkthrough has yet been verified. Production CI passing does not substitute for real-world accessibility testing.
 - **Next:** test student workflows in a graphical browser, improve mathematical derivations, increase deep studio coverage beyond 61 of 198 topics, add portfolio evidence capture and teacher-reviewed assessment if a backend is later approved. Preserve offline-friendly, no-fee architecture.
+
+
+## Continued development: advanced content, visual math, recovery and CI audit — November 16, 2026
+
+- Added **11 original intermediate and advanced studios** (probability, matrices, chain rule, data visualization, KNN, decision trees, neurons, PyTorch tensors, NLP, agents and Docker), increasing coverage from 61 to **72 of 198** mapped topics. Existing learner identifiers and completions were preserved.
+- Reworked the fraction interactive explorer to draw the actual denominator count of equal segments, highlighting the selected numerator. Replaced anonymous tens/ones characters with labelled countable blocks.
+- Added dependency-free simulated DOM regression tests for fraction partition counts and place-value units; a first test failed on a malformed regex and was corrected.
+- Added explicit visible progress saving failure warnings, differentiated unreadable stored data from failed writes, and made notes save confirmation accessible. Notes input now has a 20,000-character cap.
+- Created `scripts/audit-content.js` and `npm run audit:content`, included in the local `npm run check` and the GitHub Pages deployment gate. Reports detailed-studio coverage, checkpoint questions and project-rubric integrity per level, without claiming introductory material equals mastery.
+- **Verified CI:** GitHub Actions commit `98d34466` passed the content audit, all unit tests, production Vite build and Pages deployment. Subsequent changes require their own deployment verification.
+- **Remaining educational gaps:** 126 mapped topics do not yet have a dedicated deep-dive studio; many advanced subjects need multi-session instruction, diversified projects, rigorous derivations and independent assessment. No external evaluator has certified the course.
+- **Remaining QA gaps:** manual browser screen-reader, keyboard, small-screen and real-device tests are not yet verified. The static local-first architecture remains in place.
