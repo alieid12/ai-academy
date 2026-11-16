@@ -328,3 +328,35 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 #studio-count{margin:10px 0 20px}
 .studio-catalog button:focus-visible,.inline-link:focus-visible{outline:3px solid #a8c9ff;outline-offset:4px}
 :root[data-theme="light"] .studio-catalog .course:hover{border-color:#8caed9}
+
+
+/* Evidence-based formative checkpoints */
+.checkpoint{margin:38px 0 28px;padding:clamp(20px,3vw,34px);border:1px solid #527cbb;border-radius:22px;background:linear-gradient(155deg,#162b49,#101d30 75%)}
+.checkpoint>h2{font-size:clamp(1.35rem,2.2vw,1.9rem);margin:10px 0}
+.checkpoint>p{max-width:70ch}
+.checkpoint-items{display:grid;gap:18px;margin:27px 0}
+.checkpoint-question{min-width:0;border:1px solid #395779;border-radius:15px;background:#13253a;padding:18px}
+.checkpoint-question legend{display:block;float:left;width:100%;font-weight:720;color:#f2f7ff;line-height:1.6;margin-bottom:14px}
+.checkpoint-question legend + *{clear:both}
+.checkpoint-num{display:inline-grid;place-items:center;width:27px;height:27px;border-radius:9px;margin-right:7px;background:#345d9d;color:#fff;font-size:.8rem;font-weight:800}
+.checkpoint-choice{display:block;width:100%;background:#1a314c;border:1px solid #476486;border-radius:11px;text-align:left;padding:12px 14px;margin:8px 0;color:#f1f6ff;line-height:1.45}
+.checkpoint-choice:hover{border-color:#9cc3ff;background:#284869}
+.checkpoint-choice.checkpoint-selected{border:2px solid #9cc3ff;background:#294b79;padding:11px 13px}
+.checkpoint-feedback{margin:14px 0 0;border-left:4px solid #ecc57c;background:#352f28;color:#f7e4ca;padding:14px 16px;border-radius:0 11px 11px 0;line-height:1.65}
+.checkpoint-feedback.correct{border-color:#70cbaa;background:#183d35;color:#ceffed}
+.checkpoint-result{display:flex;flex-wrap:wrap;align-items:center;gap:12px;color:#dcecff;background:#203c60;border-radius:13px;padding:18px}
+.checkpoint-result strong{font-size:1.12rem}
+.checkpoint-reset{background:transparent;border:1px solid #688cb8;border-radius:11px;padding:10px 15px;margin-top:16px;color:#c4dcff;font-weight:700}
+.checkpoint-reset:hover{background:#233b5c}
+:root[data-theme="light"] .checkpoint{background:#f5f9ff;border-color:#b6cde9}
+:root[data-theme="light"] .checkpoint-question{background:#fff;border-color:#d0dfef}
+:root[data-theme="light"] .checkpoint-question legend{color:#243e60}
+:root[data-theme="light"] .checkpoint-choice{background:#f4f8fe;border-color:#bbcfeb;color:#244064}
+:root[data-theme="light"] .checkpoint-choice:hover{background:#e5f0ff;border-color:#608ad1}
+:root[data-theme="light"] .checkpoint-choice.checkpoint-selected{background:#d9eaff;border-color:#2c67c1}
+:root[data-theme="light"] .checkpoint-feedback{background:#fff2df;color:#744911}
+:root[data-theme="light"] .checkpoint-feedback.correct{background:#e6f7ef;color:#176047}
+:root[data-theme="light"] .checkpoint-result{background:#e4f0ff;color:#244a7d}
+:root[data-theme="light"] .checkpoint-reset{border-color:#8ab0e2;color:#2b5995}
+:root[data-theme="light"] .checkpoint-reset:hover{background:#e6f0ff}
+@media(max-width:620px){.checkpoint{padding:20px 15px;border-radius:17px}.checkpoint-question{padding:15px 12px}.checkpoint-result{display:grid}}
