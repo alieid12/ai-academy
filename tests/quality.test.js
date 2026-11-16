@@ -31,3 +31,14 @@ test('university references use secure official links',()=>{
   assert.ok(item.school && item.focus && item.prerequisite);
  }
 });
+
+test('expanded lessons contain complete teaching scaffolds',()=>{
+ for(const [id,unit] of Object.entries(masteryUnits)){
+  assert.ok(lessons[id], 'unmapped expanded lesson '+id);
+  assert.equal(lessons[id].scope,'expanded-lesson');
+  assert.ok(unit.objective && unit.misconception && unit.transfer,id);
+  assert.ok(unit.examples.length>=2 && unit.practice.length>=2,id);
+  for(const example of unit.examples)assert.ok(example.prompt&&example.work&&example.result,id);
+  for(const exercise of unit.practice)assert.ok(exercise.prompt&&exercise.hint&&exercise.solution,id);
+ }
+});
