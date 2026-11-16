@@ -373,3 +373,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .project-rubric summary{color:#21497c}
 :root[data-theme="light"] .project-rubric li{color:#223e65}
 :root[data-theme="light"] .project-rubric li p{color:#405a7c}
+
+
+/* Learner-owned progress reliability feedback */
+#storage-warning:not(:empty){padding:12px 13px;background:#422a21;border:1px solid #ce9865;border-radius:12px;color:#ffe9cf;font-size:.84rem;line-height:1.5;margin:10px 0}
+.notes-save-status{font-size:.86rem;color:#a9d2fd;line-height:1.5;margin:10px 0 0}
+:root[data-theme="light"] #storage-warning:not(:empty){background:#fff0df;border-color:#bd874b;color:#70430e}
+:root[data-theme="light"] .notes-save-status{color:#325f98}
