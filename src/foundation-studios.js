@@ -6,7 +6,7 @@ export const foundationStudios={
  vocabulary:[['sound','What you hear when you speak.'],['letter','A written symbol used in words.'],['blend','Join separate sounds into a word.']],
  explanation:'A letter is a mark on a page; a sound is what we hear. A letter can make different sounds, and two letters sometimes work together. Start with short words. Point to the first sound, say the middle sound, then the last. Blend the sounds smoothly: c – a – t becomes cat. The letters sh work together to make one sound in ship. Listen to the lesson aloud if reading is difficult.',
  worked:[['Blend sun','Say s, u, n slowly, then join the sounds to say sun.'],['Hear a two-letter sound','In shop, sh is one beginning sound. Say sh, then op, then shop.']],
- exercises:[['Which word starts with sh: ship or cat?','Ship begins with the sh sound.'],['Blend m – a – p.','Map. Say each sound, then blend them.'],['What two letters make the first sound in fish?','The final sound is sh, written with s and h.']],
+ exercises:[['Which word starts with sh: ship or cat?','Ship begins with the sh sound.'],['Blend m – a – p.','Map. Say each sound, then blend them.'],['Which two letters make the final sound in fish?','The final sound is sh, written with s and h.']],
  misconception:'A word can have more letters than sounds. Ship has four letters, but the sh pair represents one sound.',
  challenge:'Find three everyday words containing sh. Read them aloud, and explain whether sh is at the beginning or the end.'
 },
