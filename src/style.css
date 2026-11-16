@@ -45,3 +45,16 @@ body{background:radial-gradient(circle at 75% -10%,#142b4c 0,transparent 38%),#0
 .guide-meta span{display:inline-block;border:1px solid #3b5d85;border-radius:100px;padding:7px 12px;font-size:.78rem;color:#bdd5f5;background:#1c3857}
 .mastery-check{background:#203b58;border-left:3px solid #85b1ff;padding:13px 15px;border-radius:5px}
 @media(max-width:620px){.guide-panel{padding:18px}.guide-meta{display:grid}.guide-meta span{border-radius:10px}}
+
+/* Learning path product polish */
+.level-details{margin-top:20px;border-top:1px solid #30445e;padding-top:16px}
+.level-details summary{cursor:pointer;color:#a8c8ff;font-weight:750;line-height:1.5;list-style-position:inside}
+.level-details summary:hover{color:#d7e6ff}
+.level-details summary:focus-visible{outline:3px solid #a6c6ff;outline-offset:5px;border-radius:5px}
+.level-details[open] summary{margin-bottom:14px}
+.level[hidden]{display:none!important}
+.continue-card{margin-bottom:26px;border-color:#456b9c;background:linear-gradient(125deg,#162c49,#13233b)}
+.continue-card h2{font-size:1.55rem;margin:10px 0}
+.continue-card p{margin:0 0 20px}
+.continue-card .primary{width:auto}
+@media(max-width:620px){.continue-card{padding:20px}.level-details{margin-top:14px}}
