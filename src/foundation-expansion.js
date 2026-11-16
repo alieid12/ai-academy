@@ -487,5 +487,49 @@ export const foundationExpansion={
     ],
     "misconception": "Mean and median are not always equal, especially when extreme values occur.",
     "challenge": "Collect five fictional quiz scores and compare mean and median before and after one score changes to 100."
+  },
+  "English literacy:Reading words": {
+    "objective": "Recognize short everyday words and connect them with actions on a computer.",
+    "vocabulary": [
+      [
+        "read",
+        "Look at written symbols to understand their meaning."
+      ],
+      [
+        "word",
+        "A meaningful group of letters."
+      ],
+      [
+        "instruction",
+        "A message telling you what to do."
+      ]
+    ],
+    "explanation": "Start with words you can see and use every day: OPEN, SAVE, CLOSE, START and STOP. Look at the entire word while saying each sound or familiar part. Then connect the word to a real action. OPEN makes something available to use, SAVE stores your work for later, and CLOSE stops showing a window. Recognizing a word does not mean guessing from its first letter. Use the surrounding sentence to check its meaning, and use the read-aloud button when you need help.",
+    "worked": [
+      [
+        "Read and act",
+        "The button says SAVE. Read the word slowly, then explain that it means storing your work for later."
+      ],
+      [
+        "Understand a short instruction",
+        "Read 'Open the folder.' The action word is OPEN; the thing being opened is the folder."
+      ]
+    ],
+    "exercises": [
+      [
+        "Which word tells you to keep your work for later?",
+        "SAVE."
+      ],
+      [
+        "In 'Close the window', what is the action?",
+        "CLOSE. It means stop showing that window."
+      ],
+      [
+        "What should you do when you do not recognize a word?",
+        "Sound it out, check the rest of the sentence and ask or listen if needed."
+      ]
+    ],
+    "misconception": "Two words can begin with the same letter but mean different things. Read the whole word rather than guessing.",
+    "challenge": "Write five common computer buttons as words and one plain-English sentence describing each action."
   }
 };
