@@ -276,3 +276,30 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .studio-count{color:#47688e}
 :root[data-theme="light"] .primary,:root[data-theme="light"] .review-good{background:#2866d6;border-color:#2866d6;color:#fff}
 :root[data-theme="light"] .primary:hover{background:#1856c0}
+
+
+/* Interactive lesson labs — direct manipulation with text equivalents */
+.numeric-lab{margin:36px 0 18px;padding:clamp(20px,3vw,30px);border:1px solid #52779e;border-radius:20px;background:#101e31}
+.numeric-lab h2{font-size:1.45rem;margin:8px 0 10px}
+.numeric-lab>p{line-height:1.75}
+.lab-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}
+.lab-controls label{display:flex;flex-direction:column;gap:12px;color:#dbe9ff;font-size:.92rem;font-weight:700}
+.lab-controls input[type="range"]{width:100%;accent-color:#85b0ff;cursor:pointer;padding:0;background:transparent;border:0}
+.lab-output{font-weight:750;color:#e9f5ff;background:#233e61;border:1px solid #42648d;border-radius:13px;padding:17px 19px;font-variant-numeric:tabular-nums}
+.place-blocks{font-size:2rem;line-height:1.6;letter-spacing:.12em;color:#96befe;min-height:54px;overflow-wrap:anywhere}
+.fraction-track{height:30px;background:#344660;border:1px solid #6182a7;border-radius:10px;overflow:hidden}
+.fraction-track>div{height:100%;width:25%;background:repeating-linear-gradient(45deg,#5f91e6 0,#5f91e6 12px,#83acf0 12px,#83acf0 24px);transition:width .12s ease}
+.lab-graph{display:block;width:100%;max-width:520px;height:auto;color:#9dc3fc;background:#14253b;border:1px solid #385e88;border-radius:14px;margin:14px 0}
+.lab-actions{display:flex;flex-wrap:wrap;gap:10px}
+.lab-actions button{border:1px solid #6b95d4;border-radius:11px;background:#2858a2;color:white;padding:12px 17px;font-weight:750}
+.lab-actions button:last-child{background:#243850;border-color:#506d8c}
+.lab-actions button:hover{filter:brightness(1.12)}
+@media(max-width:620px){.numeric-lab{padding:19px 15px}.lab-controls{grid-template-columns:1fr}.place-blocks{font-size:1.5rem}}
+:root[data-theme="light"] .numeric-lab{background:#fff;border-color:#bdd1ea}
+:root[data-theme="light"] .lab-controls label{color:#284465}
+:root[data-theme="light"] .lab-output{background:#e6f0ff;border-color:#b9d1ef;color:#193e70}
+:root[data-theme="light"] .fraction-track{background:#e0e9f5;border-color:#bdd0e8}
+:root[data-theme="light"] .place-blocks{color:#386cae}
+:root[data-theme="light"] .lab-graph{background:#eff6ff;color:#427ab9;border-color:#cadcf0}
+:root[data-theme="light"] .lab-actions button:last-child{background:#e6effc;color:#214d84;border-color:#abc5e8}
+@media(prefers-reduced-motion:reduce){.fraction-track>div{transition:none}}
