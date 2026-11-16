@@ -144,3 +144,30 @@ p{color:var(--muted)}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #a8c9ff;outline-offset:3px}
 .level[hidden]{display:none!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Learning studios — clear hierarchy, generous rhythm, and tactile exercises */
+.studio{margin:42px 0 34px;padding:clamp(20px,3vw,34px);border:1px solid #425d7d;border-radius:24px;background:linear-gradient(160deg,#1a2d46,#101b2d 65%)}
+.studio>h2{font-size:clamp(1.6rem,2.8vw,2.15rem);margin:10px 0 16px}
+.studio>h3{font-size:1.15rem;margin:32px 0 12px;color:#f4f8ff}
+.studio>p{max-width:74ch;line-height:1.9}
+.studio-objective{border-left:4px solid #9fc4ff;padding:12px 18px;background:#203753;border-radius:0 12px 12px 0}
+.studio-glossary{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;margin:18px 0}
+.studio-glossary>div{background:#14243a;border:1px solid #3a526f;border-radius:14px;padding:17px}
+.studio-glossary dt{font-weight:800;color:#dbeaff;margin-bottom:7px}
+.studio-glossary dd{margin:0;color:#b9cce5;line-height:1.6}
+.studio-worked{display:flex;align-items:flex-start;gap:15px;margin:12px 0;padding:19px;background:#13253c;border:1px solid #365272;border-radius:15px}
+.studio-worked strong{color:#fff}
+.studio-worked p{margin:6px 0 0}
+.studio-index{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:10px;background:#315c9b;color:white;font-weight:800}
+.studio-exercise{margin:12px 0;border:1px solid #456487;border-radius:14px;background:#152940;padding:16px 20px}
+.studio-exercise summary{cursor:pointer;color:#f4f8ff;font-weight:700;line-height:1.6}
+.studio-exercise[open]{background:#1d3653}
+.studio-exercise p{padding-top:12px;border-top:1px solid #405a78}
+.studio-warning{border-left:4px solid #f0c47c;background:#352d28;padding:18px 22px;border-radius:0 13px 13px 0}
+.studio-warning strong{color:#ffe4b5}
+.studio-warning p{margin:7px 0 0;color:#e7d5c4}
+.studio-reminder{font-size:.92rem}
+.hero-secondary{margin:12px 0 0 12px;background:transparent;color:#e6f0ff;border:1px solid #6e91c5;border-radius:13px;padding:14px 20px;font-weight:700}
+.hero-secondary:hover{background:#24436d}
+@media(max-width:620px){.studio{margin:26px 0;padding:20px 16px;border-radius:18px}.hero-secondary{display:block;margin:12px 0 0;width:100%;text-align:center}.hero .primary{width:100%}}
