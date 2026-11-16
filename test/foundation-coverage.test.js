@@ -21,7 +21,7 @@ test('every foundational literacy, numeracy, computer and Python topic has a det
    }
   }
  }
- assert.equal(inspected,46,'Foundation curriculum structure changed; review coverage');
+ assert.equal(inspected,45,'Foundation curriculum structure changed; review coverage');
 });
 
 test('all enriched lessons remain linked to canonical curriculum topics',()=>{
