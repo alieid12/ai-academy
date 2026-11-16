@@ -9,10 +9,13 @@ export const projectRubrics={
         "evidence": "Read ten unfamiliar but grade-appropriate computing instructions aloud or with assistive speech and explain each in your own words."
       },
       {
-        "name": "Write five unambiguous action instructions with complete sentences and correct order.",
-        "evidence": "Proof of understanding"
+        "name": "Clear writing",
+        "evidence": "Write five unambiguous action instructions with complete sentences and correct order."
       },
-      {}
+      {
+        "name": "Proof of understanding",
+        "evidence": "Demonstrate an instruction on a real device, explain the result, and record how you checked your understanding."
+      }
     ]
   },
   "Numeracy": {
@@ -23,10 +26,13 @@ export const projectRubrics={
         "evidence": "Show at least eight worked operations including fractions, decimals, percentage discounts and checks."
       },
       {
-        "name": "Create a table of items, quantities, prices, totals and a budget limit, with units.",
-        "evidence": "Independent verification"
+        "name": "Realistic budget",
+        "evidence": "Create a table of items, quantities, prices, totals and a budget limit, with units."
       },
-      {}
+      {
+        "name": "Independent verification",
+        "evidence": "Estimate totals, recheck at least two calculations by an independent method, and explain any differences."
+      }
     ]
   },
   "Computer literacy": {
@@ -37,10 +43,13 @@ export const projectRubrics={
         "evidence": "Create a named folder system, use consistent filenames and locate a saved document."
       },
       {
-        "name": "Demonstrate password safety, reliable downloads, handling suspicious links and reversible file operations.",
-        "evidence": "Backup evidence"
+        "name": "Safe workflow",
+        "evidence": "Demonstrate password safety, reliable downloads, handling suspicious links and reversible file operations."
       },
-      {}
+      {
+        "name": "Backup evidence",
+        "evidence": "Make and restore a copy of a non-sensitive practice file, and document how you verified the backup."
+      }
     ]
   },
   "Python": {
@@ -51,10 +60,13 @@ export const projectRubrics={
         "evidence": "Build a small useful command-line project with clear prompts, validation, functions and local persistence."
       },
       {
-        "name": "Include tests for normal, boundary and invalid inputs, and document one fixed bug.",
-        "evidence": "Readable source"
+        "name": "Tests and debugging",
+        "evidence": "Include tests for normal, boundary and invalid inputs, and document one fixed bug."
       },
-      {}
+      {
+        "name": "Readable source",
+        "evidence": "Use descriptive names, a simple structure, a README and instructions for running and testing the project."
+      }
     ]
   },
   "Algebra": {
@@ -65,10 +77,13 @@ export const projectRubrics={
         "evidence": "Translate three practical word problems into formulas and name each variable and its units."
       },
       {
-        "name": "Show each valid manipulation for equations and verify by substitution.",
-        "evidence": "Graph interpretation"
+        "name": "Correct solution",
+        "evidence": "Show each valid manipulation for equations and verify by substitution."
       },
-      {}
+      {
+        "name": "Graph interpretation",
+        "evidence": "Create a clearly labelled graph or value table and explain its trends, units and one limitation."
+      }
     ]
   },
   "Computer science": {
@@ -79,10 +94,13 @@ export const projectRubrics={
         "evidence": "Implement or trace two algorithms and demonstrate outputs on representative inputs."
       },
       {
-        "name": "Explain worst-case runtime using inputs of different sizes, without claiming unsupported precision.",
-        "evidence": "Data and tests"
+        "name": "Reasoned complexity",
+        "evidence": "Explain worst-case runtime using inputs of different sizes, without claiming unsupported precision."
       },
-      {}
+      {
+        "name": "Data and tests",
+        "evidence": "Choose appropriate data structures, include boundary cases, and compare results with a simple baseline."
+      }
     ]
   },
   "Mathematics for ML": {
@@ -93,10 +111,13 @@ export const projectRubrics={
         "evidence": "Show correct derivations or computed examples for vectors, derivatives and basic probability."
       },
       {
-        "name": "Explain dimensions, assumptions and units rather than only symbols.",
-        "evidence": "Independent checks"
+        "name": "Interpretation",
+        "evidence": "Explain dimensions, assumptions and units rather than only symbols."
       },
-      {}
+      {
+        "name": "Independent checks",
+        "evidence": "Verify selected answers numerically or visually and explain approximations and potential errors."
+      }
     ]
   },
   "Data science": {
@@ -107,10 +128,13 @@ export const projectRubrics={
         "evidence": "Document the source, permission to use it, schema, missing values and transformations."
       },
       {
-        "name": "Produce charts with labels and at least three insights supported by observations.",
-        "evidence": "Risk and limitations"
+        "name": "Honest analysis",
+        "evidence": "Produce charts with labels and at least three insights supported by observations."
       },
-      {}
+      {
+        "name": "Risk and limitations",
+        "evidence": "Describe dataset bias, confounding, outliers, privacy risks and important cleaning decisions."
+      }
     ]
   },
   "Classical ML": {
@@ -121,10 +145,13 @@ export const projectRubrics={
         "evidence": "Document a train/validation/test or appropriate cross-validation protocol with correct preprocessing."
       },
       {
-        "name": "Compare with a non-ML or simple ML baseline using task-appropriate metrics.",
-        "evidence": "Error analysis"
+        "name": "Meaningful baseline",
+        "evidence": "Compare with a non-ML or simple ML baseline using task-appropriate metrics."
       },
-      {}
+      {
+        "name": "Error analysis",
+        "evidence": "Inspect representative false predictions and explain uncertainty, error patterns and possible limitations."
+      }
     ]
   },
   "Deep learning": {
@@ -135,10 +162,13 @@ export const projectRubrics={
         "evidence": "Demonstrate forward pass, loss, backward gradients and optimizer updates with tracked hyperparameters."
       },
       {
-        "name": "Record data splits, seeds, software versions, model shape and learning curves.",
-        "evidence": "Comparison and safety"
+        "name": "Reproducible experiment",
+        "evidence": "Record data splits, seeds, software versions, model shape and learning curves."
       },
-      {}
+      {
+        "name": "Comparison and safety",
+        "evidence": "Compare a baseline or controlled ablation and report overfitting, failed runs and deployment risks."
+      }
     ]
   },
   "Specializations": {
@@ -149,10 +179,13 @@ export const projectRubrics={
         "evidence": "Describe the chosen computer vision, robotics, NLP or reinforcement-learning task and constraints."
       },
       {
-        "name": "Create an appropriately scoped simulation or experiment with measurable outputs.",
-        "evidence": "Safety and robustness"
+        "name": "Working prototype",
+        "evidence": "Create an appropriately scoped simulation or experiment with measurable outputs."
       },
-      {}
+      {
+        "name": "Safety and robustness",
+        "evidence": "Evaluate relevant distribution shifts, failure cases and physical or social harms in the chosen application."
+      }
     ]
   },
   "Generative AI and agents": {
@@ -163,10 +196,13 @@ export const projectRubrics={
         "evidence": "Document prompts, retrieval or tool interfaces, sources, and trust boundaries."
       },
       {
-        "name": "Test supported tasks and missing-evidence or incorrect-answer cases; keep an evaluation record.",
-        "evidence": "Security and limitations"
+        "name": "Measurable evaluation",
+        "evidence": "Test supported tasks and missing-evidence or incorrect-answer cases; keep an evaluation record."
       },
-      {}
+      {
+        "name": "Security and limitations",
+        "evidence": "Test prompt-injection boundaries, remove unneeded permissions, and disclose uncertainty and unsupported claims."
+      }
     ]
   },
   "AI engineering": {
@@ -177,10 +213,13 @@ export const projectRubrics={
         "evidence": "Provide an executable local or cloud prototype with configuration and release instructions."
       },
       {
-        "name": "Add tests, useful logs, failure handling and monitored service metrics.",
-        "evidence": "Privacy and cost"
+        "name": "Operational checks",
+        "evidence": "Add tests, useful logs, failure handling and monitored service metrics."
       },
-      {}
+      {
+        "name": "Privacy and cost",
+        "evidence": "Explain data storage, secret handling, access boundaries, resource requirements and expected operating costs."
+      }
     ]
   },
   "Research and mastery": {
@@ -191,10 +230,13 @@ export const projectRubrics={
         "evidence": "State a hypothesis, dataset or benchmark, assumptions and a falsifiable metric."
       },
       {
-        "name": "Reproduce a baseline, document protocol, rerun with variation estimates, and perform at least one controlled ablation.",
-        "evidence": "Responsible reporting"
+        "name": "Credible experiment",
+        "evidence": "Reproduce a baseline, document protocol, rerun with variation estimates, and perform at least one controlled ablation."
       },
-      {}
+      {
+        "name": "Responsible reporting",
+        "evidence": "Present both positive and negative findings, reproducibility details, limitations, citations and next steps."
+      }
     ]
   }
 };
