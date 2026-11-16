@@ -40,3 +40,13 @@
 - Commits: d9a4c9c, 28629d6, 8b08be9.
 - Verification: GitHub connector confirmed commits, but no executable test/build results or successful Pages deployment could be obtained in this environment. New test suite is committed but not yet observed running. Do not treat commits as deployment verification.
 - Next: check workflow test results, fix any failures, inspect mobile browser behavior, then deepen numeracy and literacy instruction.
+
+## Content and UI development batch — 2026-11-16
+- Added `src/learning-studios.js`: six original in-depth learning studios (place value, multiplication, division, decimals, first Python program, ML train/test splits). Each contains an objective, terminology, detailed concept explanation, two worked examples, three exercises with answers, a misconception and a stretch challenge.
+- Integrated studios into existing lessons without replacing prior content, quizzes, notes or local progress identifiers.
+- Added a dashboard continuation button that opens the next incomplete lesson.
+- Added responsive studio design with semantic definition lists, accessible expandable exercises, high-contrast panels and mobile layout rules.
+- Added `test/learning-studios.test.js` validating studio schema and lesson integration.
+- Commits: dcd074f, e895913, c666b26, ce5589e.
+- Tests and deployment are NOT verified in this execution environment. GitHub connector accepted the commits; browser/build execution was unavailable.
+- Highest priority next: execute `npm run check` in GitHub Actions or a development environment, fix any failing tests, inspect GitHub Pages in a real browser, then expand deep studios to every foundational topic.
