@@ -23,7 +23,7 @@ export const assessmentBank = {
       "explanation": "Five tens are 50; adding eight ones gives 58."
     },
     {
-      "question": "Which number is larger?",
+      "question": "Which number is larger: 39 or 93?",
       "choices": [
         "39",
         "93",
@@ -67,7 +67,7 @@ export const assessmentBank = {
   ],
   "Numeracy:Percentages": [
     {
-      "question": "What is 10% of 90?",
+      "question": "What is 10% of a total of 90?",
       "choices": [
         "9",
         "19",
