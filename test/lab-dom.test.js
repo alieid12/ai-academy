@@ -11,8 +11,7 @@ function fixture(type,initial){
  const root={dataset:{lab:type},querySelector(selector){
   if(selector==='[data-lab-output]')return output;
   if(selector==='[data-lab-visual]')return visual;
-  const match=selector.match(/^\\[data-input="([^"]+)"\\]$/);
-  return match?inputs[match[1]]:null;
+  return selector.startsWith('[data-input="')&&selector.endsWith('"]')?inputs[selector.slice(13,-2)]:null;
  },querySelectorAll(selector){return selector==='input'?Object.values(inputs):[]}};
  const doc={querySelectorAll(selector){return selector==='[data-lab]'?[root]:[]},createElement(tag){return {tag,className:'',textContent:''}}};
  bindInteractiveLabs(doc);
