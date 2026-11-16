@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {phases,lessons,inventory} from '../src/curriculum.js';
 import {getGuide} from '../src/learning-guides.js';
 import {masteryUnits} from '../src/mastery-units.js';
+import {advancedUnits} from '../src/advanced-units.js';
 import {universityResources} from '../src/university-resources.js';
 
 test('all mapped topics resolve to a usable lesson',()=>{
@@ -41,5 +42,14 @@ test('expanded lessons contain complete teaching scaffolds',()=>{
   assert.ok(unit.examples.length>=2 && unit.practice.length>=2,id);
   for(const example of unit.examples)assert.ok(example.prompt&&example.work&&example.result,id);
   for(const exercise of unit.practice)assert.ok(exercise.prompt&&exercise.hint&&exercise.solution,id);
+ }
+});
+
+test('advanced units are mapped and contain worked practice',()=>{
+ for(const [id,unit] of Object.entries(advancedUnits)){
+  assert.ok(lessons[id], 'unmapped advanced unit '+id);
+  assert.equal(lessons[id].scope,'expanded-lesson');
+  assert.ok(unit.objective && unit.misconception && unit.transfer,id);
+  assert.ok(unit.examples.length>=2 && unit.practice.length>=2,id);
  }
 });
