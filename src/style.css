@@ -360,3 +360,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .checkpoint-reset{border-color:#8ab0e2;color:#2b5995}
 :root[data-theme="light"] .checkpoint-reset:hover{background:#e6f0ff}
 @media(max-width:620px){.checkpoint{padding:20px 15px;border-radius:17px}.checkpoint-question{padding:15px 12px}.checkpoint-result{display:grid}}
+
+
+/* Transparent portfolio evidence rubric, not automatic grading */
+.project-rubric{margin:24px 0 5px;padding:17px 20px;border-radius:14px;border:1px solid #557497;background:#192d45}
+.project-rubric summary{cursor:pointer;color:#d9eaff;font-weight:780;line-height:1.5}
+.project-rubric[open]>p{margin:16px 0;line-height:1.65}
+.project-rubric ol{padding-left:1.5rem;display:grid;gap:14px}
+.project-rubric li{padding:3px 0 8px;color:#e1edff}
+.project-rubric li p{margin:5px 0 0;color:#bdcee5}
+:root[data-theme="light"] .project-rubric{background:#eaf3ff;border-color:#b6cbe6}
+:root[data-theme="light"] .project-rubric summary{color:#21497c}
+:root[data-theme="light"] .project-rubric li{color:#223e65}
+:root[data-theme="light"] .project-rubric li p{color:#405a7c}
