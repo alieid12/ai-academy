@@ -30,3 +30,13 @@
 - Never represent a planned module as fully taught.
 - Preserve existing learner data and maintain offline-friendly GitHub Pages hosting.
 - Avoid paid infrastructure and unverified claims of deployment success.
+
+## Second implementation batch — 2026-11-16
+- Added import of progress JSON backups, with format/version validation, 2 MB input limit, filtering of lesson IDs and quiz answers, bounded notes, and merge behavior that preserves existing notes and answers.
+- Added accessible import status announcements and a visible import control.
+- Added quiz feedback identifying the correct choice and a lesson-specific explanation or teaching step.
+- Added keyboard focus styles, search visibility rules and reduced-motion CSS.
+- Added Node test suite `test/curriculum-integrity.test.js` checking curriculum topic coverage, answer indices, learning guides and HTTPS resource links.
+- Commits: d9a4c9c, 28629d6, 8b08be9.
+- Verification: GitHub connector confirmed commits, but no executable test/build results or successful Pages deployment could be obtained in this environment. New test suite is committed but not yet observed running. Do not treat commits as deployment verification.
+- Next: check workflow test results, fix any failures, inspect mobile browser behavior, then deepen numeracy and literacy instruction.
