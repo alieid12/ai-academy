@@ -1,17 +1,19 @@
 # AI Academy
 
-An accessible, English-language AI learning platform designed for an adult starting with limited reading, writing, numeracy, and computer skills.
+An independent, beginner-first artificial intelligence learning platform. Designed for an adult starting with limited formal education, reading confidence, arithmetic, or computer experience.
 
-## Current implementation
+**Open the academy:** https://alieid12.github.io/ai-academy/
 
-- Five curriculum phases, 14 levels, and dynamically counted modules.
-- Searchable curriculum and clear distinction between planned and authored lessons.
-- Five authored introductory interactive lessons (reading, addition, computers, Python, algebra).
-- Quizzes with feedback, independent exercises, notes, browser speech synthesis, adjustable text size.
-- Browser-local completion and instructor overview; no accounts or server database yet.
-- Responsive layout with keyboard focus indicators.
+## What works today
 
-**Important:** Curriculum module titles are outlines, not completed instructional materials. A full AI degree-equivalent curriculum, presentation library, production backend, and AI tutor are not yet implemented.
+- **Curriculum:** 5 phases, 14 levels, 198 mapped topic lessons, level prerequisites, outcomes, portfolios, and checkpoints.
+- **Detailed teaching:** 40 original deep-dive studios. Each includes an objective, vocabulary, a substantial explanation, 2 worked examples, 3 guided practice questions with answers, a common misconception, and a challenge.
+- **Additional content:** 18 expanded lessons, 10 topic-specific worked examples, and 7 guided lab extensions. Most other mapped topics are still introductory overviews.
+- **Learning interactions:** quizzes with explanatory feedback, learner notes, active-recall practice, device-local spaced review, and 4 interactive numerical labs (place value, fractions, discounts, and gradient descent).
+- **Access:** responsive desktop/mobile design, keyboard focus indicators, expandable answers, read-aloud speech synthesis where supported, light and dark appearance, adjustable type size, and reduced-motion styles.
+- **Private local progress:** completions, quiz answers, notes, review schedule and preferences stored in browser localStorage; progress JSON export and validated import.
+
+**Not implemented:** a sandboxed Python runtime, authenticated learner or teacher accounts, cross-device sync, backend grading, extensive research labs, or independent certification of mastery. A completed introductory quiz records activity completion only. It does **not** establish professional competence.
 
 ## Development
 
@@ -20,21 +22,33 @@ Requires Node.js 22 or later.
 ```bash
 npm install
 npm run dev
-npm run build
+npm run check
+npm run preview
 ```
 
-## Deployment
+`npm run check` runs all Node unit tests followed by a production Vite build. The deployment workflow on pushes to `main` also runs the tests and build before deploying the generated `dist` folder through GitHub Pages.
 
-GitHub Actions workflow builds and deploys the Vite site to GitHub Pages. In repository Settings → Pages, set **Build and deployment** to **GitHub Actions**. The intended URL is https://alieid12.github.io/ai-academy/ after a successful workflow.
+Deployment runs: https://github.com/alieid12/ai-academy/actions
 
-## Next milestones
+## Architecture
 
-1. Author full foundational literacy and numeracy lessons, with accessible worksheets and slide decks.
-2. Add diagnostic placement, mastery checks, spaced repetition and more interactive labs.
-3. Add secure authentication, database-backed progress, teacher roles, and server-side grading.
-4. Add tests, continuous accessibility checks, content quality review, and localization support.
-5. Develop advanced AI courses, research assignments, and portfolio projects.
+- Vite + native JavaScript modules, semantic HTML and responsive CSS.
+- Static hosting on GitHub Pages at the `/ai-academy/` base path.
+- Original lesson data stored separately in `src/` modules.
+- No hosted database, secrets, paid APIs, remote progress tracking, or required learner login.
+- `src/review-scheduler.js` uses deterministic, testable spaced review intervals. It is a learning aid, not an automated proficiency assessment.
+- `src/interactive-labs.js` runs basic calculations entirely on the device, without executing user-submitted code.
 
-## Privacy
+## Content integrity and next priorities
 
-Learner notes and progress currently stay in browser localStorage on the same device and browser. They are not synced. Do not enter sensitive personal information. Clearing browser storage will remove progress.
+Mapped topic coverage is **not** the same as full educational depth: 40 of 198 topics currently have a dedicated deep-dive studio. Many additional topics have improved extended content, but introductory topics still need substantial lessons, varied assessments and feedback. The original university reference links are pointers to external material, not copies of copyrighted lectures.
+
+Priority work includes fully developed mathematics and digital literacy pathways, Python debugging and assessment projects, deeper AI labs, browser-based accessibility audits, responsive device testing, robust data recovery and mastery rubrics.
+
+See [Development log](DEVELOPMENT_LOG.md) and [Quality standard](PRODUCT_QUALITY_STANDARD.md).
+
+## Privacy and backup
+
+Progress remains in localStorage for the current browser profile. It does not sync to another device or browser. Clearing site data may remove your progress, so **export a JSON backup** periodically. Importing a backup merges recognized lesson records and retains existing notes and answers on the current device.
+
+Avoid entering private or sensitive information into exercise notes. AI Academy is an independent learning project and is not affiliated with the universities linked as resources.
