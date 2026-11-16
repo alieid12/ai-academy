@@ -58,3 +58,17 @@ body{background:radial-gradient(circle at 75% -10%,#142b4c 0,transparent 38%),#0
 .continue-card p{margin:0 0 20px}
 .continue-card .primary{width:auto}
 @media(max-width:620px){.continue-card{padding:20px}.level-details{margin-top:14px}}
+
+/* Refined platform surfaces and accessibility */
+:root{--surface:#111d30;--surface-raised:#182943;--hairline:#334762;--accent:#90b7ff}
+.skip-link{position:fixed;z-index:9999;top:12px;left:12px;transform:translateY(-160%);background:#fff;color:#0b1729;padding:12px 18px;border-radius:12px;font-weight:800}
+.skip-link:focus{transform:translateY(0)}
+:where(button,a,input,textarea,summary):focus-visible{outline:3px solid #b8d3ff;outline-offset:3px}
+.top-actions{align-items:center;flex-wrap:wrap;justify-content:flex-end}
+#export-progress{white-space:nowrap;font-size:.83rem}
+.level,.panel,.course{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.module{transition:transform .16s ease,background .16s ease,border-color .16s ease}
+.module.ready:hover{transform:translateY(-1px)}
+.content{overflow-wrap:break-word}
+@media(max-width:620px){#export-progress{font-size:.74rem;padding:9px 10px}.top-actions{gap:5px}.top-actions button{padding:9px}.top{min-height:64px;height:auto;padding-block:8px}}
+@media(prefers-reduced-motion:reduce){.module.ready:hover,.course:hover{transform:none}}
