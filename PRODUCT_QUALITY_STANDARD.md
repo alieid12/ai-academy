@@ -59,4 +59,4 @@ Make high-quality AI education accessible to an adult starting with limited read
 - No feature is described as implemented until verified.
 
 ## Current release note
-Stage 1 improvements have been committed. Stage 2–5 are future work, not finished features.
+Stage 1 reliability improvements are implemented and have passed automated CI release checks; manual accessibility and browser QA remain incomplete. Stage 2 now includes 92 original detailed studios out of 198 mapped topics, plus 33 checkpoint questions and portfolio review rubrics for all 14 levels. Stage 3 includes six self-contained numerical demonstrations and a local spaced-recall aid; these do not provide a Python execution environment. Stage 4 contains preliminary practice checks but no independent mastery verification. Stage 5 remains largely future work. These are progress descriptions, not 10/10 quality ratings.
