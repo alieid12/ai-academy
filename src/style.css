@@ -319,3 +319,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .search-count{color:#4c6686}
 :root[data-theme="light"] .level-details{border-color:#d3e0ef}
 :root[data-theme="light"] .level-details summary{color:#28568f}
+
+
+/* Discovery: keyboard-friendly search with actual hidden results */
+.studio-catalog .course[hidden]{display:none!important}
+.studio-catalog .course{min-height:235px}
+#studio-search{max-width:540px}
+#studio-count{margin:10px 0 20px}
+.studio-catalog button:focus-visible,.inline-link:focus-visible{outline:3px solid #a8c9ff;outline-offset:4px}
+:root[data-theme="light"] .studio-catalog .course:hover{border-color:#8caed9}
