@@ -74,3 +74,15 @@
 - **Verified CI:** GitHub Actions commit `98d34466` passed the content audit, all unit tests, production Vite build and Pages deployment. Subsequent changes require their own deployment verification.
 - **Remaining educational gaps:** 126 mapped topics do not yet have a dedicated deep-dive studio; many advanced subjects need multi-session instruction, diversified projects, rigorous derivations and independent assessment. No external evaluator has certified the course.
 - **Remaining QA gaps:** manual browser screen-reader, keyboard, small-screen and real-device tests are not yet verified. The static local-first architecture remains in place.
+
+
+## Continued curriculum and interactive ML milestone — November 16, 2026
+
+- Added ten original `src/neural-expansion.js` studios: activations, losses, forward propagation, optimizers, regularization, normalization, training loops, CNNs, autoencoders and diffusion.
+- Added ten original `src/systems-expansion.js` studios: prompting, self-attention, vector search, tool calling, generative AI evaluation/safety, CI/CD, data drift, engineering security and research-paper reading.
+- Deep-dive coverage now totals **92 of 198 topics**; all content retains original objective, vocabulary, worked examples, three practice exercises with answers, common misconception and stretch challenge. **106 mapped topics remain without that depth.** Quality targets are still aspirational.
+- Added an interactive single-neuron weighted-sum/ReLU demonstration and fixed-dataset one-dimensional KNN classifier, expanding from four to **six** on-device numerical learning labs.
+- Added unit tests validating neuron outputs, KNN nearest-neighbor voting, and accessible explanatory lab markup.
+- Continued zero-cost static GitHub Pages architecture, no accounts or paid AI API required.
+- The most recent confirmed successful production build and Pages deployment prior to this documentation update was commit `8277ad7d`, including all ten neural studios. Verify the current head workflow for the systems expansion and documentation.
+- Next work: independent beginner diagnostic and mastery rubrics, additional 106 detailed studios, browser-based QA, text and screen-reader support for interactive lessons, and stronger project assessment.
