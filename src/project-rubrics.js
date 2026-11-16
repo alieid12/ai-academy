@@ -78,7 +78,7 @@ export const projectRubrics={
       },
       {
         "name": "Correct solution",
-        "evidence": "Show each valid manipulation for equations and verify by substitution."
+        "evidence": "Show valid equation manipulations, verify answers by substitution in the original equation, and explain each step in plain English."
       },
       {
         "name": "Graph interpretation",
@@ -112,7 +112,7 @@ export const projectRubrics={
       },
       {
         "name": "Interpretation",
-        "evidence": "Explain dimensions, assumptions and units rather than only symbols."
+        "evidence": "Interpret each mathematical result by explaining its quantities, physical units, assumptions and practical meaning."
       },
       {
         "name": "Independent checks",
@@ -146,7 +146,7 @@ export const projectRubrics={
       },
       {
         "name": "Meaningful baseline",
-        "evidence": "Compare with a non-ML or simple ML baseline using task-appropriate metrics."
+        "evidence": "Compare against a non-ML or simple ML baseline using task-appropriate metrics, documenting how each was evaluated."
       },
       {
         "name": "Error analysis",
@@ -214,7 +214,7 @@ export const projectRubrics={
       },
       {
         "name": "Operational checks",
-        "evidence": "Add tests, useful logs, failure handling and monitored service metrics."
+        "evidence": "Include automated tests, structured logs, safe failure handling and monitoring for latency and error rates."
       },
       {
         "name": "Privacy and cost",
