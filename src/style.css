@@ -394,3 +394,20 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 :root[data-theme="light"] .place-blocks .ones-block{background:#6d9bd6;color:#122c51}
 :root[data-theme="light"] .fraction-track .fraction-cell{background:#e3edf8;border-color:#fff}
 :root[data-theme="light"] .fraction-track .fraction-cell.selected{background:#578ad9}
+
+
+/* Browser-local neuron and K-nearest-neighbor experiments */
+.neuron-pipeline{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:20px 0}
+.neuron-pipeline span{flex:1;min-width:100px;border-radius:13px;padding:18px 10px;text-align:center;background:#254a76;border:1px solid #648bbb;color:#e6f3ff;font-weight:800;line-height:1.4}
+.neuron-pipeline span:last-child{background:#345d9c}
+.knn-line{position:relative;min-height:102px;padding:0 22px;margin:24px 0;border:1px solid #46698e;border-radius:12px;background:#12273f;overflow:visible}
+.knn-line::before{content:'';position:absolute;left:3%;right:3%;top:60%;border-top:2px solid #96b9e7}
+.knn-point,.knn-query{position:absolute;display:grid;place-items:center;width:29px;height:29px;transform:translateX(-50%);font-size:.79rem;font-weight:800;border-radius:50%;box-shadow:0 3px 9px #06111e66}
+.knn-point{top:calc(60% - 14px);color:#fff}
+.knn-point.a{background:#3f7fc2;border:2px solid #c7e4ff}
+.knn-point.b{background:#a05bba;border:2px solid #f1d5fe}
+.knn-query{top:8px;background:#ffd17c;color:#50300b;border:2px solid #fff0c9}
+:root[data-theme="light"] .neuron-pipeline span{background:#e4efff;border-color:#b8cee9;color:#214b82}
+:root[data-theme="light"] .neuron-pipeline span:last-child{background:#d7e8ff}
+:root[data-theme="light"] .knn-line{background:#f3f8ff;border-color:#bad0ed}
+:root[data-theme="light"] .knn-line::before{border-color:#6190cc}
