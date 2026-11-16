@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {phases,lessons,inventory} from '../src/curriculum.js';
 import {getGuide} from '../src/learning-guides.js';
+import {masteryUnits} from '../src/mastery-units.js';
 import {universityResources} from '../src/university-resources.js';
 
 test('all mapped topics resolve to a usable lesson',()=>{
