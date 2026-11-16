@@ -72,3 +72,18 @@ body{background:radial-gradient(circle at 75% -10%,#142b4c 0,transparent 38%),#0
 .content{overflow-wrap:break-word}
 @media(max-width:620px){#export-progress{font-size:.74rem;padding:9px 10px}.top-actions{gap:5px}.top-actions button{padding:9px}.top{min-height:64px;height:auto;padding-block:8px}}
 @media(prefers-reduced-motion:reduce){.module.ready:hover,.course:hover{transform:none}}
+
+/* Mastery lesson design */
+.expanded-lesson{margin:28px 0;padding-top:10px;border-top:1px solid #354760}
+.expanded-lesson h2{margin-top:30px;font-size:1.3rem}
+.worked-card{background:#182a43;border:1px solid #385578;border-radius:16px;padding:20px;margin:14px 0}
+.worked-card h3{margin:12px 0}
+.worked-card p{margin:12px 0 0}
+.worked-steps,.practice-item pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0a172a;border-radius:10px;padding:16px;color:#dce9ff;line-height:1.7;font-size:.91rem}
+.misconception{border-left:3px solid #e9bb75;background:#2a2731;padding:12px 20px;border-radius:8px;margin:22px 0}
+.misconception h3{margin:4px 0;color:#ffdda7}
+.misconception p{margin:4px 0}
+.practice-item{border:1px solid #3b526f;border-radius:13px;margin:12px 0;padding:16px;background:#15263c}
+.practice-item summary{cursor:pointer;font-weight:700;line-height:1.5;color:#d8e8ff}
+.practice-item details{padding:10px 0 0 12px}
+.practice-item summary:focus-visible{outline:3px solid #b8d3ff;outline-offset:4px}
