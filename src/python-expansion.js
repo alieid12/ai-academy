@@ -252,7 +252,7 @@ export const pythonExpansion={
     "worked": [
       [
         "Create a simple object",
-        "class Task: ... then task = Task() creates an instance when the class has a suitable constructor."
+        "Write \"class Task:\" followed by an indented \"pass\" statement on the next line. Then \"task = Task()\" creates an instance."
       ],
       [
         "Store and update state",
@@ -344,7 +344,7 @@ export const pythonExpansion={
     "worked": [
       [
         "Understand a response",
-        "An API might return {'temperature': 25}; the client should check the field exists and is a valid number."
+        "An HTTP API might return the JSON object {\"temperature\":25}. Validate the field and its numeric type before displaying it."
       ],
       [
         "Handle a failure",
